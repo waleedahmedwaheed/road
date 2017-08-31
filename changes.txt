@@ -1,0 +1,19 @@
+login-register.php
+header.php
+functions.php
+bookings.php (admin panel)
+user_loc.php
+all_users_loc.php
+side_menu.php
+booking_save.php
+index.php
+delete_booking.php
+
+css(demo.css)
+
+booking table (mysql)
+users table (mysql)
+
+location.png (img folder)
+
+AIzaSyDMSwNnGECAsOFOW73ppBRMgINBM1a7mpM online

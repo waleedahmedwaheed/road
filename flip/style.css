@@ -1,0 +1,82 @@
+#theArt {
+	padding: .5em;
+	overflow: hidden;
+	background: whitesmoke;
+	width: 440px;
+	margin: auto;
+}
+.artGroup {
+	display: block;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 0 10px 10px 10px;
+	float: left;
+}
+.artwork {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.artGroup img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: block;
+}
+.artGroup .detail {
+	display: block;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.artGroup .detail h3 {
+	font: 300 18px/1.1 Dosis, sans-serif;
+	text-align: center;
+	color: orange;
+}
+.artGroup .detail p {
+	font: 200 13px/1.2 Dosis, sans-serif;
+	text-align: left;
+	padding: 0 0.25em;
+	line-height: 25px;
+}
+article {
+	clear: both;
+	font: 300 15px/1.2 Dosis, sans-serif;
+	margin: 2em auto;
+	max-width: 600px;
+}
+
+/* Older Browsers */
+.artGroup.slide {
+	overflow: hidden;
+}
+.artGroup.slide .detail {
+	bottom: -364px;
+}
+
+/* Newer Browsers */
+.artGroup.flip {
+	-webkit-perspective: 800px;
+	perspective: 800px;
+	width: 95%;
+}
+.artGroup.flip .artwork {
+	-webkit-transition: -webkit-transform 1s ease; 
+	transition: transform 1s ease; 
+
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.artGroup.flip .detail, .artGroup.flip .theFlip {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.artGroup.flip img, .artGroup.flip .detail {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}

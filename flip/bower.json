@@ -1,0 +1,28 @@
+{
+  "name": "cardflip",
+  "version": "0.0.1",
+  "homepage": "https://github.com/david-pm/cardflip",
+  "authors": [
+    "davidpm <info@davidpm.io>"
+  ],
+  "description": "a cardflip demo",
+  "main": "index.html",
+  "keywords": [
+    "css",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.4",
+    "jquery-easing": "*"
+  }
+}
